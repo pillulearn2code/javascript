@@ -29,7 +29,7 @@ console.log('type of fruit',typeof fruits);
 var numberArray=[21,22,54,66];
 console.log(typeof numberArray);
 
-//Create an array named cars, assign the values "Saab", "Volvo" and "BMW" to it, and display it.
+//Create an array named cars, assign the values "Saab", "Volvo" and "BMW" to it, and display it. test
 var cars = ['saab','Volvo','BMW'];
 console.log(cars);
 console.log(cars[1]);
