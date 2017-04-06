@@ -1,0 +1,97 @@
+
+
+<html>
+<head>
+    <script src="types.js"></script>
+</head>
+
+
+<body>
+
+    <h1>My javascript page </h1> 
+    <p>Exaples from Video tutoral https://www.youtube.com/watch?v=fju9ii8YsGs</p>
+    <p id='demo'></p>
+    <script>
+    document.getElementById('demo').innerHTML='Hello Java Script';
+    </script>
+
+
+
+    <p id='sayHello'></p>
+
+    <Script>
+    
+        // You will get popup for name and alert message if no name is provided.
+        /*
+        var yourName = prompt ('What is your name?');
+        if (yourName != null){
+            document.getElementById ('sayHello').innerHTML= 'Hello ' + yourName;
+        }else{
+           window.alert('Please enter your Name Next time');
+        }*/
+        
+        
+       
+    
+    //------ VARIABLES---------
+    var myName= 'Gita';
+    var myAge= 21;
+    //console.log('My name is '+myName +' and My age is '+myAge);
+    //document.write('My name is '+myName +' and my age is '+myAge,'<br/>');
+    //window.alert('My name is '+myName +' and my age is '+myAge);
+
+    //---------Math--------
+    
+    document.write ('5+4 =',5+4,'<br/>');
+    document.write('5-4=',5-4,'<br/>');
+    document.write('5*4=',5*4,'<br/>');
+    document.write('5%4 ='+5%4+ "<br/>");
+    document.write('5/4='+5/4+ '<br/>');
+
+
+//shortcut for adding 1
+var randomNumber= 5;
+document.write('randomNumber++ = ', randomNumber++,'<br/>');
+document.write('++randomNumber = ', ++randomNumber,'<br/>');
+
+//shortcut for substract 1
+
+document.write('randomNumber-- = ', randomNumber--,'<br/>');
+document.write('--randomNumber = ', --randomNumber,'<br/>');
+
+
+// Perform a calculation on a value and assign the result
+document.write('randomNumber += 5 ',randomNumber=randomNumber+ 5,'<br/>');
+document.write('randomNumber -=5 ' ,randomNumber -= 5,'<br/>');
+document.write('randomNumber *= 5 ',randomNumber *=5 ,'<br/>');
+
+//-------Math Library--------
+document.write('Math.E ',Math.E, '<br/>');
+document.write('Math.PI ',Math.E, '<br/>');
+
+
+// styling a strings
+
+var strToString = 'Random String';
+    
+document.write('Big :', strToString.big(),'<br/>');
+document.write('Bold : ',strToString.bold(),'<br/>');
+document.write('Italic : ',strToString.italics(),'<br/>');
+document.write('Fount size : ', strToString.fontcolor('Orange'),'<br/>');
+document.write('Fount Size : ',strToString.fontsize(10),'<br/>');
+document.write('Link : ',strToString.link('https://www.google.se/webhp?sourceid=chrome-instant&ion=1&espv=2&ie=UTF-8#q=w3schools&*'),'<br/>')
+document.write('Small : ',strToString.small(),'<br/>');
+document.write('Strike : ',strToString.strike(),'<br/>');
+document.write('Subscript : ',strToString.sub(),'<br/>');
+document.write('Superscript : ',strToString.sup(),'<br/>');
+
+//-----Function-----
+
+
+
+
+ </Script>
+
+</body>
+
+</html>
