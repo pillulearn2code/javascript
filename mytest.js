@@ -6,14 +6,14 @@
 
 
 
-var myString = 'Ajanta';
+var myString = 'Duglous';
 var Age = 33;
 var boolean = true;
 var year = 2017
 
 console.log('My name is :' + myString);
 console.log('My Age is :' + Age);
-console.log('You are working at Klarna?' + boolean);
+console.log('You are working at Google?' + boolean);
 console.log(Age + 3.5);
 console.log(year - 1969);
 console.log(65 / 240);

@@ -3,12 +3,12 @@
 
 // example to define a string and print two strings with white spaces.
 
-var firstNameString = 'Ajanta';
-var lastnameString = 'Bisht';
+var firstNameString = 'Paul';
+var lastnameString = 'Jual';
 var textString = 'Please locate where \'locate\' occurs!';
 
 console.log('What\'s your name' + ' ' + firstNameString + ' ' + lastnameString);
-console.log('We are from \"India\"');
+console.log('We are from \"America\"');
 
 
 // pint the string length
@@ -156,9 +156,9 @@ for(var iCount= stringName.length;iCount>=0;iCount--){
 
 //  Printing your address for members of the family
 
-var firstNameArray = ['Ajanta', 'Virender', 'Rushil'];
-var lastnameArray = ['Bisht', 'Mehta', 'Mehta'];
-var address = 'R\   åcksta Gårdsvag 21';
+var firstNameArray = ['paul', 'mat', 'henrik'];
+var lastnameArray = ['karl', 'das', 'dev'];
+var address = 'R\   åcksta Gårdsvag';
 var pin = '16273'
 for (var iCount = 0; iCount <= firstNameArray.length - 1; iCount++) {
     console.log('First Name :' + firstNameArray[iCount]);
