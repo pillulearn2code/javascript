@@ -1,3 +1,4 @@
+
 var tomSmith= ['Tom Smith','123 street','21'];
 console.log('First Index is ',tomSmith[0]);
 var arraylenght=tomSmith.length+1;
