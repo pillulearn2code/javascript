@@ -1,0 +1,19 @@
+  * {
+      font-family: 'Georgia', 'Times', serif;
+  }
+  /* Image styling*/
+  
+  img {
+      border-radius: 100%;
+  }
+  /* Heading styling */
+  
+  h1 {
+      color: brown;
+      font-size: 30px;
+  }
+  /* link styling*/
+  
+  a {
+      color: blue;
+  }
