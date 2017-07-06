@@ -1,3 +1,58 @@
 * {
-    background-color: rgb(86, 129, 255);
+    background-color: rgb(129, 111, 218);
+}
+
+.content {
+    font: Garamond;
+    font-size: 10 px;
+    color: white;
+    font-size: 10px;
+    padding: 30px;
+    width: 50%;
+}
+
+h1 {
+    font-family: Garamond;
+    color: white;
+    font-size: 30px;
+    padding-top: 10px;
+    padding: 30px;
+    text-align: left;
+    width: 50%;
+    text-transform: uppercase;
+}
+
+h2 {
+    border-bottom: 1px solid;
+    font-family: Garamond;
+    font-size: 20px;
+    color: rgba(255, 255, 255, 0.5);
+    width: 40%;
+    padding: 30px;
+    word-spacing: 0.05em;
+    letter-spacing: 0.3em;
+    font-style: italic;
+}
+
+p {
+    font-family: Garamond;
+    font-size: 18px;
+    color: white;
+    width: 60%;
+    padding: 30px;
+    line-height: 1.7em;
+    font-weight: 100;
+}
+
+.image {
+    background-image: url("https://s3.amazonaws.com/codecademy-content/courses/web-101/unit-4/htmlcss1-img_soccer.jpeg");
+    height: 400px;
+    background-position: center center;
+    padding-block-start: 50px;
+}
+
+h3 {
+    font-family: Garamond;
+    padding: 30px;
+    color: white;
 }
