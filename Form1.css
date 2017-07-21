@@ -42,8 +42,11 @@
 }
 
 .containor {
+    max-width: 1400;
     display: flex;
-    align-items: top;
+    align-items: below;
+    margin-right: 40px;
+    margin: 10px;
 }
 
 .pink-containor {
