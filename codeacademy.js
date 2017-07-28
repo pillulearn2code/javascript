@@ -20,7 +20,7 @@ console.log(Math.floor(Math.random() * 50));
 
 
 //Controle_flow
-//    Exercise 1
+//    Exercise 1 test
 var harryPotterFan = false;
 if (harryPotterFan) { console.log('Mischief managed.'); } else {
     console.log('I lead a muggle\'s life.');
