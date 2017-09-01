@@ -1,0 +1,27 @@
+.first_form {
+    width: 800px;
+    background-color: antiquewhite;
+    text-align: center;
+    padding: 20px;
+    font-size: 30px;
+    border: 1px dotted black;
+}
+
+form input[type=text] {
+    width: 400px;
+    height: 20px;
+}
+
+form input[type=submit] {
+    width: 200px;
+    height: 20px;
+    text-align: center;
+    background-color: pink;
+    border-radius: 20px;
+}
+
+form input[type=email] {
+    width: 400px;
+    height: 20px;
+    text-align: left;
+}

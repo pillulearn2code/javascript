@@ -1,0 +1,33 @@
+form {
+    width: 70%;
+    height: 100px;
+    background-color: antiquewhite;
+    padding: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+form input[type=text] {
+    width: 30%;
+    height: 25px;
+}
+
+form input[type=email] {
+    width: 61%;
+    height: 25px;
+}
+
+form input[type=tel] {
+    width: 61%;
+    height: 25px;
+}
+
+form input[type=submit] {
+    width: 10%;
+    height: 20px;
+    text-align: center;
+    background-color: pink;
+    border-radius: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.payment_selector {}
