@@ -13,10 +13,10 @@ form input[type=text] {
 }
 
 form input[type=submit] {
-    width: 200px;
-    height: 20px;
+    width: 100px;
+    height: 25px;
     text-align: center;
-    background-color: pink;
+    background-color: lightblue;
     border-radius: 20px;
 }
 

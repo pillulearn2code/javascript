@@ -1,6 +1,6 @@
 form {
     width: 70%;
-    height: 100px;
+    height: 200px;
     background-color: antiquewhite;
     padding: 15px;
     font-family: Arial, Helvetica, sans-serif;
@@ -23,11 +23,9 @@ form input[type=tel] {
 
 form input[type=submit] {
     width: 10%;
-    height: 20px;
+    height: 25px;
     text-align: center;
     background-color: pink;
     border-radius: 15px;
     font-family: Arial, Helvetica, sans-serif;
 }
-
-.payment_selector {}
