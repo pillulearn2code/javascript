@@ -1,0 +1,44 @@
+<!DOCTYPE HTML>
+
+<head>
+    <title>Signin form</title>
+    <link href="w3c_forms.css" type="text/css" rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="form_content">
+        <h2>Sign in</h2>
+    </div>
+
+    <form action="action.php" method="POST" autocomplete="ON">
+        <fieldset>
+            <legend></legend>
+            First Name:
+            <input type="text" name="firstname" value="Mikey">
+            <br> <br> Last Name:
+            <input type="text" name="lastname" value="Mouse">
+            <br><br> Address:
+            <input type="text" name="address" value="Address">
+            <br><br> Gender:
+            <input type="radio" name="gender" value="male" checked> Male
+            <input type="radio" name="gender" value="female"> Female <br>
+            <input type="date">
+            <br>Country:
+            <Select name="country">
+                <option value= "Sweden">Sweden</option>
+                <option value="Norway" selected>Norway</option>
+                <option value="Finland">Finland</option>
+            </Select>
+            <br><br> Message
+            <textarea name="Message" rows="5" cols="25">
+            </textarea>
+            <br><br><br><br>
+            <input type="submit" name="Submit" value="Submit">
+            <a href="">Change Order</a>
+
+        </fieldset>
+    </form>
+
+
+</body>

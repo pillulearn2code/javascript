@@ -47,7 +47,12 @@ var server = app.listen(5000, function() {
 
 3. Do “npm init”  to create “package.json”.
 
-4.npm install body-parser --save
+4.To handle HTTP POST request in Express.js version 4 and above, you need to install middleware module called body-parser. The middleware was a part of Express.js earlier but now you have to install it separately.
+
+This body-parser module parses the JSON, buffer, string and url encoded data submitted using HTTP POST request. Install body-parser using NPM as shown below.
+
+
+npm install body-parser --save
 
 
 
@@ -61,6 +66,8 @@ app.get('/', function(req, res) {
 
 6.use “node app.js” to start the server.
 
+#### For improting css fils###
+https://expressjs.com/en/starter/static-files.html
 
 
 

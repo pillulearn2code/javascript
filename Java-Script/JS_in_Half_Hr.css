@@ -1,0 +1,24 @@
+h1 {
+    text-align: left;
+    font: Courier New;
+    font-size: 10px;
+}
+
+ul {
+    font: Courier New;
+    font-size: 6px;
+}
+
+li {
+    border-bottom-color: black;
+    border-bottom: 2px;
+    width: 20px;
+    height: 10px;
+    background-color: antiquewhite;
+}
+
+button {
+    background-color: burlywood;
+    width: 15px;
+    hight: 20px;
+}

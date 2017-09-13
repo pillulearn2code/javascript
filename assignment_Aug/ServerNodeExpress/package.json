@@ -1,0 +1,26 @@
+{
+  "name": "express.js_web_application",
+  "version": "1.0.0",
+  "description": "Server",
+  "main": "app.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pillulearn2code/javascript.git"
+  },
+  "keywords": [
+    "Server_keyword"
+  ],
+  "author": "ajanta",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pillulearn2code/javascript/issues"
+  },
+  "homepage": "https://github.com/pillulearn2code/javascript#readme",
+  "dependencies": {
+    "body-parser": "^1.18.0",
+    "express": "^4.15.4"
+  }
+}

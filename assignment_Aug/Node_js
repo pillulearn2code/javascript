@@ -1,0 +1,18 @@
+URL- http://www.tutorialsteacher.com/nodejs/what-is-nodejs
+https://www.youtube.com/watch?v=jiSFfpw3Btc
+
+
+What is Node.js
+
+-Is is used to make server side applications.
+- Good for realtime stuff. Use less memory resolurces.
+-Node.js is fast and effecient.
+-
+
+-code in node.js is server side code and it keep on running if the server is up.
+-Node.js is an open-source server side runtime environment built on Chrome's V8 JavaScript engine.
+It provides an event driven, non-blocking (asynchronous) I/O and cross-platform runtime environment for building highly scalable server-side application using JavaScript.
+
+In node everything is a refferance?
+
+
