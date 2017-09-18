@@ -16,3 +16,11 @@ It provides an event driven, non-blocking (asynchronous) I/O and cross-platform 
 In node everything is a refferance?
 
 
+Express.js
+
+http://www.tutorialsteacher.com/nodejs/expressjs
+
+- Express.js is a web application framework for Node.js. It provides various features that make web application development fast
+and easy which otherwise takes more time using only Node.js.
+-To handle HTTP POST request in Express.js version 4 and above, you need to install middleware module called body-parser.
+The middleware was a part of Express.js earlier but now you have to install it separately
