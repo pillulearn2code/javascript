@@ -1,0 +1,17 @@
+URL:
+https://css-tricks.com/logic-in-media-queries/
+
+
+@media (max-width:632px)
+
+
+Let's break down your examples one by one.
+
+@media (max-width:632px)
+This is applicable for anything smaller then the desktop device.
+This one is saying for a window with a max-width of 632px that you want to apply these styles. At that size you would be talking about anything smaller than a desktop screen in most cases.
+
+
+######Local Storage 
+http://blog.teamtreehouse.com/storing-data-on-the-client-with-localstorage
+

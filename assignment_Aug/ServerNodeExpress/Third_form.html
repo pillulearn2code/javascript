@@ -3,11 +3,31 @@
 
 <head>
     <title>Payment options</title>
+
+
 </head>
 
 <body>
-    Thank you for submitting the information.
+    <div id="confirmation_text">
+        Thank you for submitting the information. You will receive notofication on your email.
+    </div>
 
 </body>
+
+<script type="text/javascript">
+    if (localStorage) {
+        //retrieve the email.
+        var email = localStorage.getItem("email");
+        var first_name = localStorage.getItem("first_name");
+        var last_name = localStorage.getItem("last_name");
+
+
+        if (first_name !== undefined || first_name !== null || last_name !== undefined || last_name !== null || email !== undefined || email !== null) {
+            document.getElementById("confirmation_text").innerText = " Thank you " + first_name + " " + last_name + " for placing the order." + " You will receive notification on email " + email + " .";
+            //document.getElementById("confirmation_text").innerText = "You will receive  notification on email " + email + " .";
+        }
+    }
+</script>
+
 
 </html>

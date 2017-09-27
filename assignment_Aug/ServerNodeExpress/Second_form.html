@@ -4,20 +4,41 @@
 <head>
     <title>Second Form</title>
     <link href="Second_form.css" type="text/css" rel="stylesheet">
+    <meta name="viewpoart" content="width=device-width, initial-scale=1.0">
 </head>
 
 <body>
 
-    <form action="Third_form.html" method="POST">
+    <form id="Second_form" action="Third_form.html" method="POST">
         <text>Address</text><br>
-        <input type="Email" name="Email" placeholder="Email" required><br>
-        <input type="text" name="First name" placeholder="First name" required>
-        <input type="text" name="Last name" placeholder="Last Name" required><br>
-        <input type="text" name="Address" placeholder="Address" required>
-        <input type="text" name="Post code" placeholder="Post Code" required><br>
-        <input type="tel" name="Phone number" placeholder="Phone Number" required><br>
-        <input type="submit" name="Button" value="Continue">
+        <input id="email" type="Email" name="Email" placeholder="Email" required><br>
+        <input id="first_name" type="text" name="First name" placeholder="First name" required>
+        <input id="last_name" type="text" name="Last name" placeholder="Last Name" required><br>
+        <input id="address" type="text" name="Address" placeholder="Address" required>
+        <input id="post_code" type="text" name="Post code" placeholder="Post Code" required><br>
+        <input id="phone_number" type="tel" name="Phone number" placeholder="Phone Number" required><br>
+        <input id="button" type="submit" name="Button" value="Continue">
     </form>
 </body>
+
+<script>
+    if (localStorage) {
+
+        document.getElementById("Second_form").addEventListener("submit", function() {
+
+            // Get the value of fields.
+            var email = document.getElementById("email").value;
+            var first_name = document.getElementById("first_name").value;
+            var last_name = document.getElementById("last_name").value;
+            // Save the name in localStorage.
+            console.log("Third step");
+            localStorage.setItem("User_first_name", first_name);
+            localStorage.setItem("User_last_name", last_name);
+            localStorage.setItem("email", email);
+            console.log("forth step");
+
+        });
+    }
+</script>
 
 </html>

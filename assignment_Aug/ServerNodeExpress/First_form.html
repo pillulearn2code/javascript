@@ -4,22 +4,37 @@
 <head>
     <title>Form</title>
     <link href="/First_form.css" type="text/css" rel="stylesheet">
+    <meta name="viewpoart" content="width=device-width, initial-scale=1.0">
 
 </head>
 
 <body>
     <div class="first_form">
         <text> </text>
-        <form action="Second_form.html" method="POST">
+        <form id="first_form" action="Second_form.html" method="POST">
             <div class="text_area">
-                <input type="email" name="email" placeholder="Email" required>
-                <input type="text" name="PIN" placeholder="PostCode" maxlength="10" required>
-                <input type="text" name="NIN" placeholder="National Identification Number" maxlength="10" required><br>
-                <input type="submit" name="Button" value="Continue">
+                <input type="email" name="email" id="email" placeholder="Email" required>
+                <input type="text" name="PIN" id="PIN" placeholder="PostCode" maxlength="10" required>
+                <input type="text" name="NIN" id="NIN" placeholder="National Identification Number" maxlength="10" required><br>
+                <input type="submit" name="Button" id="submit" value="Continue">
             </div>
         </form>
     </div>
 
+    <script type="text/javascript">
+        //Localstorage - http://blog.teamtreehouse.com/storing-data-on-the-client-with-localstorage
+        //https://www.smashingmagazine.com/2010/10/local-storage-and-how-to-use-it/
+        if (localStorage) {
+            // Add an event listener for form submissions
+            document.getElementById("first_form").addEventListener("submit", function() {
+                // Get the value of the email field.
+                var email = document.getElementById("email").value;
+                // Save the name in localStorage.
+                localStorage.setItem("email", email);
+
+            });
+        }
+    </script>
 
 
 </body>
