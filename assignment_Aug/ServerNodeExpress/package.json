@@ -20,7 +20,7 @@
   },
   "homepage": "https://github.com/pillulearn2code/javascript#readme",
   "dependencies": {
-    "body-parser": "^1.18.0",
+    "body-parser": "^1.18.2",
     "express": "^4.15.4"
   }
 }
