@@ -1,5 +1,9 @@
 var express = require('express');
 var app = express();
+var dataToSecondForm
+var email;
+var PIN;
+var NIN;
 
 //middle ware
 var bodyParser = require("body-parser");
@@ -12,28 +16,49 @@ app.use(express.static('./')); // for the static file (css)
 
 app.get('/', function(req, res) {
     console.log("request infomation", req.body);
-    res.sendFile('First_form.html', { root: __dirname });;
-
-
+    res.sendFile('First_form.html', { root: __dirname });
 });
 
 app.post('/Second_form.html', function(req, res) {
-
-    res.sendFile('Second_form.html', { root: __dirname });;
-    console.log("request infomation", req.body);
-    var dataToSecondForm = req.body;
+    res.sendFile('Second_form.html', { root: __dirname });
+    dataToSecondForm = req.body;
+    console.log("request infomation to second form ", dataToSecondForm);
+    email = dataToSecondForm.email;
+    PIN = dataToSecondForm.PIN;
+    NIN = dataToSecondForm.NIN;
 
 });
 
 app.post('/Third_form.html', function(req, res) {
-    console.log("request infomation", req.body);
-    res.sendFile('Third_form.html', { root: __dirname });;
+    res.sendFile('Third_form.html', { root: __dirname });
+    var dataToThirdForm = req.body;
+    console.log("request infomation to third form ", req.body);
+
+
 });
 
 // server port
 var server = app.listen(5000, function() {
     console.log('Node server is running..');
 });
+
+app.get('/thanks', function(req, res) {
+    console.log("request infomation", req.body);
+    console.log(dataToSecondForm);
+
+    res.send(dataToSecondForm);
+
+    return;
+
+    // res.sendDate(email);
+    //res.sendDate(PIN);
+    //res.sendDate(NIN);
+});
+
+
+
+
+
 /*
 // storing data in local storage
 
