@@ -1,9 +1,9 @@
 var express = require('express');
 var app = express();
 var dataToSecondForm
-var email;
-var PIN;
-var NIN;
+    //var email;
+    //var PIN;
+    //var NIN;
 
 //middle ware
 var bodyParser = require("body-parser");
@@ -23,9 +23,9 @@ app.post('/Second_form.html', function(req, res) {
     res.sendFile('Second_form.html', { root: __dirname });
     dataToSecondForm = req.body;
     console.log("request infomation to second form ", dataToSecondForm);
-    email = dataToSecondForm.email;
-    PIN = dataToSecondForm.PIN;
-    NIN = dataToSecondForm.NIN;
+    // email = dataToSecondForm.email;
+    //PIN = dataToSecondForm.PIN;
+    //NIN = dataToSecondForm.NIN;
 
 });
 
@@ -42,14 +42,13 @@ var server = app.listen(5000, function() {
     console.log('Node server is running..');
 });
 
+//Data 
+
 app.get('/thanks', function(req, res) {
     console.log("request infomation", req.body);
     console.log(dataToSecondForm);
-
     res.send(dataToSecondForm);
-
     return;
-
     // res.sendDate(email);
     //res.sendDate(PIN);
     //res.sendDate(NIN);

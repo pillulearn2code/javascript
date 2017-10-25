@@ -19,15 +19,12 @@
     // AJAX call 
     var confirmation = document.getElementById("confirmation_text");
     var ourRequest = new XMLHttpRequest();
-    ourRequest.open('GET', "/thanks")
-
+    ourRequest.open('GET', "/thanks") // getting data from server.
     ourRequest.onload = function() {
         var ourData = JSON.parse(ourRequest.responseText);
-        console.log("data to third form", ourData);
-        console.log("data to third form", ourData.email);
-
-
-        var htmlString = "Thank you  " + ourData.NIN + "for placing the order we will contact you in " + ourData.email + ".";
+        //console.log("data to third form", ourData);
+        // console.log("data to third form", ourData.email);
+        var htmlString = "Thank you  " + ourData.NIN + " for placing the order we will contact you in email" + ourData.email + ".";
         confirmation.insertAdjacentHTML('beforeend', htmlString);
     };
     ourRequest.send();
@@ -35,17 +32,17 @@
 
 <script type="text/javascript">
     /*
-                                                        if (localStorage) {
-                                                        //retrieve the email.
-                                                        var email = localStorage.getItem("email");
-                                                        var first_name = localStorage.getItem("first_name");
-                                                        var last_name = localStorage.getItem("last_name");
-                                                        if (first_name !== undefined || first_name !== null || last_name !== undefined || last_name !== null || email !== undefined || email !== null) {
-                                                        document.getElementById("confirmation_text").innerText = " Thank you " + first_name + " " + last_name + " for placing the order." + " You will receive notification on email " + email + " .";
-                                                        //document.getElementById("confirmation_text").innerText = "You will receive  notification on email " + email + " .";
-                                                        }
-                                                        }
-                                                                                    */
+                                                                if (localStorage) {
+                                                                //retrieve the email.
+                                                                var email = localStorage.getItem("email");
+                                                                var first_name = localStorage.getItem("first_name");
+                                                                var last_name = localStorage.getItem("last_name");
+                                                                if (first_name !== undefined || first_name !== null || last_name !== undefined || last_name !== null || email !== undefined || email !== null) {
+                                                                document.getElementById("confirmation_text").innerText = " Thank you " + first_name + " " + last_name + " for placing the order." + " You will receive notification on email " + email + " .";
+                                                                //document.getElementById("confirmation_text").innerText = "You will receive  notification on email " + email + " .";
+                                                                }
+                                                                }
+                                                                                            */
 </script>
 
 

@@ -1,0 +1,21 @@
+AJAX Video - https://www.youtube.com/watch?v=rJesac0_Ftw
+
+In AJAX below steps are importamnt 
+
+1. Define a variable equal XMLHttpRequest
+var ourRequest = new XMLHttpRequest();
+
+2. (variable).open with GET /POST and data source.
+
+ ourRequest.open('GET', "https://learnwebcode.github.io/json-example/animals-1.json")
+
+ 3. (variable).onload and define everyting inside the  function 
+    a) define the variable and assigna data to the variable from responce text 
+ ourRequest.onload = function() {
+        var ourData = JSON.parse(ourRequest.responseText);
+        renderHTML(ourData);
+        //console.log(ourData);
+    };
+
+
+4. ourRequest.send(); to send the request.
